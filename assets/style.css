@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+    background: black; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1DBFFF; 
+    border-radius: 10px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+}
+
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 6rem;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+
+}
+
+.nav:hover {
+    box-shadow: #1DBFFF 0px 2px 10px 0px;
+    transition: box-shadow 0.5s ease;
+}
+
+.nav.scrolled {
+    background-color: black;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav ul li {
+    font-weight: 600;
+    color: #f9f9f9;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #f9f9f9;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.nav ul li:hover {
+    font-weight: 600;
+    color: #1dbfff;
+    
+}
+
+button {
+    font-family: 'Roboto Slab', serif;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    border: solid 2px #1dbfff;
+    border-radius: 50px;
+    color: #f9f9f9;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+button a {
+    text-decoration: none;
+    color: #1dbfff;
+}
+
+button:hover {
+    background-color: #1dbfff;
+}
+
+button:hover a {
+    color: #f9f9f9;
+}
+
+
+.presenter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: #191934;
+    padding: 0 2rem;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 50%;
+}
+
+.text-ola{
+    color: #f9f9f9;
+    font-size: 1.5rem;
+    margin-bottom: -1rem;
+}
+
+.text-dev{
+    color: #f9f9f9;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.name h1 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 900;
+    color: #f9f9f9;
+    margin-bottom: 1rem;
+    font-size: 4rem;
+}
+
+.presenter img {
+    width: 30%;
+    max-width: 100%;
+    border: 3px solid #1dbfff;
+    border-radius: 50%;
+}
+
+.section-s {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.section-s div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-s div p{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+}
+
+.section-s h2 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    color: #191934;
+    font-size: 3rem;
+    text-align: start;
+    padding: 3rem 5rem;
+}
+
+.section-s p {
+    font-family: 'poppins', serif;
+    font-weight: 500;
+    color: #191934;
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: 0rem 5rem;
+}
+
+.section-s button, .section-s a {
+    color: #f9f9f9;
+    border: none;
+    border-radius: 10px;
+    margin: 3rem 5rem;
+    background-color: black;
+    max-width: 350px;
+}
+
+.section-s button:hover {
+    background-color: rgb(38, 38, 38);
+}
+
+.section-p {
+    background-color: black;
+    height: 110vh;
+    color: #f9f9f9;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 2rem;
+    padding: 3rem 5rem;
+}
+
+.div-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    color: #f9f9f9;
+    font-size: 2rem;
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.div-text p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.section-p video {
+    width: 100%;
+    border: 3px solid #1dbfff;
+    box-shadow: 0px 0px 20px -2px #1dbfff;  
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    justify-content: center;
+    display: flex;
+    min-width: 50%;
+    box-sizing: border-box;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel video {
+    width: 50%; 
+    border: 2px solid #1dbfff;
+    border-radius: 10px;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #f9f9f9;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 0;
+}
+
+.carousel-control.next {
+    right: 0;
+}
+
+.section-bar {
+    display: flex;
+    flex-direction: column;
+    background-color: #191934;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.section-h1 {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    color: #f9f9f9;
+    font-size: 2rem;
+    margin: 3rem 5rem;
+    padding-bottom: 3rem;
+}
+
+.section-h1 p {
+    font-weight: 400;
+    color: #f9f9f9;
+    font-size: 1.5rem;
+}
+
+.section-h2 {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'poppins', serif;
+    font-weight: 400;
+    color: #f9f9f9;
+    font-size: 1.5rem;
+    margin: 3rem 5rem;
+}
+
+.section-header {
+    margin: 3rem 5rem;
+    color: #f9f9f9;
+}
+.section-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #f9f9f9;
+}
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #f9f9f9;
+}
+
+.text-content {
+    font-family: 'poppins', serif;
+    font-weight: 300;
+    color: #f9f9f9;
+    font-size: 1.3rem;
+    margin: 3rem 5rem;
+}
+
+.progress-bar {
+    margin-bottom: 10px;
+    color: #f9f9f9;
+}
+.bar {
+    width: 80%;
+    height: 10px;
+    background: #0a0a13;
+    border-radius: 5px;
+    position: relative;
+}
+.fill {
+    height: 100%;
+    background: #00aaff;
+    border-radius: 5px;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+footer h3{
+    color: #f9f9f9;
+    font-weight: 300;
+    font-size: 1rem;
+}

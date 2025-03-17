@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonardo Rejani</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header id="inicio">
+
+        <nav class="nav">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#habi">Habilidades</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/leonardo-rejani-59559331b/" target="_blank">
+                    <img src="assets/img/icons/link.png" alt="LinkedIn" width="35px" style="border-radius: 50%;">
+                </a>
+                <a href="https://github.com/leonardorejani?tab=repositories" target="_blank">
+                    <img src="assets/img/icons/git.png" alt="GitHub" width="35px" style="border-radius: 50%;">
+                </a>
+                <a href="https://wa.me/4484097902/?text=" target="_blank">
+                    <img src="assets/img/icons/whats.png" alt="WhatsApp" width="35px" style="border-radius: 50%;">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="presenter">
+            <div class="name">
+                <p class="text-ola">Olá, meu nome é</p>
+                <h1>Leonardo Rejani</h1>
+                <p class="text-dev">Desenvolvedor <strong style="color: #1dbfff;">Front-End</strong></p>
+                <button class="button-proj"><a href="#projetos">Meus projetos</a></button>
+            </div>
+            <img src="assets/img/foto leo.png" alt="Foto do desenvolvedor">
+        </section>
+
+        <section id="sobre" class="section-s" style="background-image: url('assets/img/background.jpg'); background-size: cover; background-position: center;">
+            <div>
+                <h2>.Sobre</h2>
+                <p>- Quem sou eu -</p>
+            </div>
+            <p>Sou o <strong>Leonardo Primavera Rejani</strong> Designer Gráfico e estudante de ADS na Unicesumar, aspirante a desenvolvedor Front-End. Tenho experiência em ferramentas como WordPress, Elementor, HTML e CSS, além de softwares de design e edição (PhotoShop, Premiere, Illustrator e After Effects). Meu objetivo é combinar criatividade e tecnologia para desenvolver soluções digitais inovadoras, com foco em Front-End e UX/UI Design.</p>
+            <button>
+                <a href="assets/img/Currículo - Leonardo Primavera Rejani.pdf" download="Currículo - Leonardo Primavera Rejani">Baixe meu currículo</a>
+            </button>
+        </section>
+
+        <section id="projetos" class="section-p">
+            
+            <div class="div-text">
+                <h2>.Projetos</h2>
+                <p>- Acesse o portfólio completo -</p>
+            </div>
+
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <video src="assets/video/Inspire-2024.mp4" controls muted autoplay></video>
+                    </div>
+                    <div class="carousel-item">
+                        <video src="assets/video/dom-avisos.mp4" controls muted autoplay></video>
+                    </div>
+                    <div class="carousel-item">
+                        <video src="assets/video/Cartao-3D.mp4" controls muted autoplay></video>
+                    </div>
+                    <div class="carousel-item">
+                        <video src="assets/video/animacao-youtube.mp4" controls muted autoplay></video>
+                    </div>
+                    <div class="carousel-item">
+                        <video src="assets/video/corrida.mp4" controls muted autoplay></video>
+                    </div>
+                    <div class="carousel-item">
+                        <video src="assets/video/SLIDE-LATERAIS-PROJETO-SOLA.mp4" controls muted autoplay></video>
+                    </div>
+                </div>
+                <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+                <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+            </div>
+
+        </section>
+
+        <section id="habi" class="section-bar">
+            <div class="section-header" style="display: flex; justify-content: space-between; align-items: center;">
+                <h2 class="section-title">.Habilidades</h2>
+                <p class="section-subtitle">- O que eu faço -</p>
+            </div>
+            <div class="section-content" style="display: flex; justify-content: space-between; align-items: start; gap: 40px;">
+                <div class="text-content" style="flex: 1;">
+                    <p>Tenho experiência com <strong>HTML, CSS, WordPress e Elementor</strong>, que são as bases do desenvolvimento web.</p>
+                    <p>Minha habilidade com <strong>Photoshop e Premiere</strong> me permite criar visuais impactantes e conteúdos audiovisuais de alta qualidade.</p>
+                    <p>Meu foco atual é aprofundar conhecimentos em <strong>front-end e UX Design</strong>, buscando sempre soluções que sejam intuitivas, funcionais e visualmente atraentes. Nos meus projetos, valorizo cada detalhe, desde o código até a experiência do usuário.</p>
+                </div>
+                <div class="progress-content" style="flex: 1;">
+                    <div class="progress-bar">
+                        <p>HTML</p>
+                        <div class="bar"><div class="fill" style="width: 80%;"></div></div>
+                    </div>
+                    <div class="progress-bar">
+                        <p>CSS</p>
+                        <div class="bar"><div class="fill" style="width: 70%;"></div></div>
+                    </div>
+                    <div class="progress-bar">
+                        <p>JavaScript</p>
+                        <div class="bar"><div class="fill" style="width: 40%;"></div></div>
+                    </div>
+                    <div class="progress-bar">
+                        <p>WordPress | Elementor</p>
+                        <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="progress-bar">
+                        <p>Photoshop</p>
+                        <div class="bar"><div class="fill" style="width: 75%;"></div></div>
+                    </div>
+                    <div class="progress-bar">
+                        <p>Adobe Premiere</p>
+                        <div class="bar"><div class="fill" style="width: 80%;"></div></div>
+                    </div>
+                    <div class="progress-bar">
+                        <p>Adobe After Effects</p>
+                        <div class="bar"><div class="fill" style="width: 55%;"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    </main>
+
+
+    <footer>
+        <h3>Criado por <strong style="color: #1dbfff;">Leonardo Rejani</strong> | Todos os direitos reservados 2025.</h3>
+    </footer>
+
+    <script src="assets/script.js"></script>
+
+</body>
+</html>
